@@ -1,0 +1,22 @@
+.btn-bold{
+    font-weight: 400 !important;
+}
+
+span.big-brand{
+    font-size: 140pt !important;
+    text-align: center !important;
+    color: #F5F5DC;
+    user-select: none;
+}
+
+img.big-brand{
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.big-brand{
+    height: 700px !important;
+}
