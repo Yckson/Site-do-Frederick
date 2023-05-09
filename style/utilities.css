@@ -1,22 +1,110 @@
-.btn-bold{
-    font-weight: 400 !important;
+@media Screen and (max-width: 1175px) {
+    div.menu{
+        width: 60% !important;
+    }
+    
+    div.frederick{
+        width: 20% !important;
+    }
 }
 
-span.big-brand{
-    font-size: 140pt !important;
-    text-align: center !important;
-    color: #F5F5DC;
-    user-select: none;
+@media Screen and (max-width: 980px) {
+    div.menu{
+        width: 70% !important;
+    }
+
+    div.frederick-brand{
+        max-height: 600px !important;
+    }
+
+    div.frederick-brand > span{
+        font-size: 110pt !important;
+    }
+    div.frederick-brand img{
+        max-height: 550px !important;
+    }
 }
 
-img.big-brand{
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+@media Screen and (max-width: 850px){
+    div.menu{
+        width: 100% !important;
+    }
+
+    div.frederick{
+        width: 100% !important;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    div.frederick-brand{
+        max-height: 500px !important;
+    }
+
+    div.frederick-brand > span{
+        font-size: 90pt !important;
+    }
+    div.frederick-brand img{
+        max-height: 500px !important;
+    }
+
+    h1.cap{
+        font-size: 22pt !important;
+    }
+
+    div.about-frederick{
+        padding: 10px 50px !important;
+    }
 }
 
-div.big-brand{
-    height: 700px !important;
+@media Screen and (max-width: 700px){
+    div.about-frederick{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 20px 0px !important;
+    }
+
+    div.about-desc{
+        width: 90% !important;
+        font-size: 12pt;
+    }
+}
+
+@media Screen and (max-width: 650px){
+
+    div.frederick-brand{
+        max-height: 400px !important;
+    }
+
+    div.frederick-brand > span{
+        font-size: 50pt !important;
+    }
+    div.frederick-brand img{
+        max-height: 400px !important;
+    }
+
+    
+
+}
+
+@media Screen and (max-width: 520px){
+    nav{
+        padding: 20px 5% !important;
+    }
+
+    div.about-frederick > img{
+        max-height: 200px !important;
+        padding-top: 20px;
+    }
+
+    h1.cap{
+        font-size: 20pt !important;
+    }
+
+    div.menu{
+        justify-content: space-evenly !important;
+    }
+
+    div.menu > a{
+        padding: 5px 10px;
+    }
 }

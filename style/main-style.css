@@ -2,18 +2,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
-button, a{
-    font-family: 'Open Sans', sans-serif !important;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+button, a, span, h1, p{
+    font-family: 'Open Sans', sans-serif !important;
+    text-decoration: none;
+}
+
+html, body{
+    width: 100%;
+}
+
+div.page{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.menu, .frederick{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%; 
+}
+
+div.frederick{
+    width: 20%;
+}
+
+div.frederick > button{
+    background-color: transparent;
+    border: none;
+    padding: 2px 6px;
+    font-size: 12pt ;
+    cursor: pointer;
+}
+
+div.frederick > button.fButton{
+    border: solid black 1px;
+    border-radius: 120px;
+    padding: 6px 10px;
+}
+
+
 
 .menu a{
     color: #D2691E !important;
 }
 
-#about-frederick{
+div.frederick-brand{
+    position: relative;
+    width: 100%;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 700px;
+}
+
+div.frederick-brand span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 140pt;
+    color: #F5F5DC;
+}
+
+div.frederick-brand img{
+    position: absolute;
+    user-select: none !important;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+h1.cap{
+    color:  rgb(41, 41, 41);
+    text-align: center;
+    font-size: 28pt;
+    padding: 20px;
+}
+
+div.about-frederick{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 98%;
+    padding: 10px 100px;
+    border-radius: 15px;
     background-color: #FFF8DC;
+    align-items: center;
+}
+
+div.about-frederick > .about-desc{
+    width: 70%;
+    color: #CD853F;
+    text-align: center;
 }
 
 #frederick-about-image{
     max-height: 300px;
 }
+
