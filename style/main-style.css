@@ -208,7 +208,6 @@ div.m-list{
     flex-direction: column;
     width: 20%;
     border-collapse: collapse;
-    height: 500px;
 }
 
 div.m-list > ul{
@@ -226,9 +225,15 @@ div.m-list li a, div.m-list li{
     border-bottom: solid 1px rgb(20, 20, 20);
 }
 
+div.m-list li{
+    display: block;
+    width: 100%;
+}
+
 div.lore-container{
     width: 80%;
     overflow-y: scroll;
+    transition: 1s;
 }
 
 div.m-lore{
@@ -246,7 +251,7 @@ div.m-lore > *{
 }
 
 div.m-lore img{
-    max-width: 230px;
+    width: 230px;
     border-radius: 50%;
     border: double 4px white;
 

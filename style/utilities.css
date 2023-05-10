@@ -1,3 +1,13 @@
+@media Screen and (max-width: 1290px){
+    div.lore-container{
+        width: 75% !important;
+    }
+    div.m-list{
+        width: 25% !important;
+    }
+}
+
+
 @media Screen and (max-width: 1175px) {
     div.menu{
         width: 60% !important;
@@ -21,6 +31,17 @@
     div.investigation-video{
         width: calc((100% / 3) - 10px) !important;
     }
+
+    div.m-lore img{
+        width: 190px !important;
+    }
+
+    div.lore-container{
+        width: 70% !important;
+    }
+    div.m-list{
+        width: 30% !important;
+    }
 }
 
 @media Screen and (max-width: 980px) {
@@ -35,7 +56,7 @@
     
 }
 
-@media Screen and (max-width: 850px){
+@media Screen and (max-width: 866px){
     div.menu{
         width: 100% !important;
     }
@@ -72,6 +93,53 @@
     div.investigation-video{
         width: calc((100% / 2) - 10px) !important;
     }
+
+    div.monsters{
+        flex-direction: column !important;
+        height: fit-content !important;
+        width: 80% !important;
+        border-radius: 15px;
+    }
+
+    div.m-lore img{
+        width: 190px !important;
+    }
+
+    div.lore-container{
+        width: 100% !important;
+        height: 500px !important;
+    }
+
+    div.m-list{
+        flex-direction: row !important;
+        height: auto !important;
+        width: 100% !important;
+        overflow: auto !important;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+
+    div.m-list > ul{
+        display: flex;
+        align-items: center;
+        flex-direction: row !important;
+        width: fit-content !important;
+        padding: 5px 0px !important;
+        
+        
+    }
+
+    div.m-list a{
+        padding: 0px 0px !important;
+        
+    }
+
+    div.m-list > ul > li{
+        height: fit-content !important;
+        width: max-content !important;
+        
+    }
 }
 
 @media Screen and (max-width: 700px){
@@ -101,6 +169,10 @@
 
     div.investigation{
         padding: 2% !important;
+    }
+
+    div.m-lore img{
+        width: 150px !important;
     }
 
 }
@@ -150,5 +222,9 @@
 
     div.investigation-video{
         width: calc(100% - 5px) !important;
+    }
+
+    div.m-lore img{
+        width: 100px !important;
     }
 }
