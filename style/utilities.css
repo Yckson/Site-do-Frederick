@@ -6,12 +6,6 @@
     div.frederick{
         width: 20% !important;
     }
-}
-
-@media Screen and (max-width: 980px) {
-    div.menu{
-        width: 70% !important;
-    }
 
     div.frederick-brand{
         max-height: 600px !important;
@@ -23,6 +17,22 @@
     div.frederick-brand img{
         max-height: 550px !important;
     }
+
+    div.investigation-video{
+        width: calc((100% / 3) - 10px) !important;
+    }
+}
+
+@media Screen and (max-width: 980px) {
+    div.menu{
+        width: 70% !important;
+    }
+
+    div.investigation{
+        padding: 5% !important;
+    }
+
+    
 }
 
 @media Screen and (max-width: 850px){
@@ -54,6 +64,14 @@
     div.about-frederick{
         padding: 10px 50px !important;
     }
+
+    video.backgroundVideo01{
+        width: 150% !important;
+    }
+
+    div.investigation-video{
+        width: calc((100% / 2) - 10px) !important;
+    }
 }
 
 @media Screen and (max-width: 700px){
@@ -66,7 +84,25 @@
     div.about-desc{
         width: 90% !important;
         font-size: 12pt;
+        padding-bottom: 40px;
     }
+
+    video.backgroundVideo01{
+        width: 200% !important;
+    }
+
+    div.frederick-brand  span{
+        font-size: 70pt !important;
+    }
+
+    div.investigation-video{
+        width: calc((100% / 2) - 5px) !important;
+    }
+
+    div.investigation{
+        padding: 2% !important;
+    }
+
 }
 
 @media Screen and (max-width: 650px){
@@ -80,6 +116,10 @@
     }
     div.frederick-brand img{
         max-height: 400px !important;
+    }
+
+    video.backgroundVideo01{
+        width: 300% !important;
     }
 
     
@@ -106,5 +146,9 @@
 
     div.menu > a{
         padding: 5px 10px;
+    }
+
+    div.investigation-video{
+        width: calc(100% - 5px) !important;
     }
 }

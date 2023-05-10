@@ -1,6 +1,14 @@
 @import url('utilities.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+@font-face {
+    font-family: "Elianto";
+    src: url("../src/Elianto-Regular.ttf"),
+         url("../src/Elianto-Regular.otf");
+}
+
+
+
 
 *{
     padding: 0;
@@ -8,7 +16,7 @@
     box-sizing: border-box;
 }
 
-button, a, span, h1, p{
+button, a, span, h1, p, h2, li{
     font-family: 'Open Sans', sans-serif !important;
     text-decoration: none;
 }
@@ -83,7 +91,8 @@ div.frederick-brand span{
     margin: 0 auto;
     text-align: center;
     font-size: 140pt;
-    color: #F5F5DC;
+    color: black;
+    font-family: 'Elianto' !important;
 }
 
 div.frederick-brand img{
@@ -103,22 +112,146 @@ h1.cap{
 
 div.about-frederick{
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin: 0 auto;
-    width: 98%;
+    width: 100%;
     padding: 10px 100px;
-    border-radius: 15px;
-    background-color: #FFF8DC;
+    background-color: rgba(0, 0, 0, 0.795);
     align-items: center;
+    border: double black;
+    border-width: 5px 0px;
+    overflow: hidden;
+}
+
+video.backgroundVideo01{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
 }
 
 div.about-frederick > .about-desc{
     width: 70%;
-    color: #CD853F;
+    color: white;
     text-align: center;
 }
 
-#frederick-about-image{
+img#frederick-about-image{
     max-height: 300px;
 }
 
+p.cap-desc{
+    text-align: center;
+    padding: 20px 10%;
+    color: #CD853F;
+}
+
+div.investigation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+    justify-content: space-between;
+}
+
+div.investigation-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc((100% / 3) - 20px);
+    padding: 10px;
+    border: #D2691E solid 1px;
+    margin: 10px 0;
+    border-radius: 4px;
+    height: auto;
+}
+
+
+
+div.investigation-video img{
+        width: 100%;
+        border-radius: 4px;
+}
+
+div.investigation-video p{
+    text-align: justify;
+}
+
+div.investigation-video button{
+    background-color: white;
+    color: #D2691E;
+    border: none;
+    padding: 7px 10px;
+    font-size: 12pt;
+    border: #D2691E 1px solid;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+
+div.monsters{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    height: 500px;
+}
+
+div.m-list{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-collapse: collapse;
+    height: 500px;
+}
+
+div.m-list > ul{
+    padding: 30px 0;
+    list-style: none;
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    border-collapse: collapse !important;
+    height: 100%;
+}
+
+div.m-list li a, div.m-list li{
+    padding: 10px 20px;
+    color: white;
+    border-bottom: solid 1px rgb(20, 20, 20);
+}
+
+div.lore-container{
+    width: 80%;
+    overflow-y: scroll;
+}
+
+div.m-lore{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+div.m-lore > *{
+    margin: 10px 0;
+}
+
+div.m-lore img{
+    max-width: 230px;
+    border-radius: 50%;
+    border: double 4px white;
+
+}
+
+div.m-lore p{
+    text-align: justify;
+}
