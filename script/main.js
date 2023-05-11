@@ -3,4 +3,3 @@ window.addEventListener("load", (event) =>{
 })
 
 let listOfVideos = document.getElementsByClassName('listOfVideos');
-console.log(listOfVideos);
