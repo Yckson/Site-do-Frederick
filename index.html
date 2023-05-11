@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta important="naotemsenha">
     <title>Frederick!!!</title>
     <link rel="stylesheet" href="style/main-style.css">
 </head>
@@ -15,7 +16,7 @@
                     <a href="#sobre" class="">Sobre</a>
                     <a href="#investigacao" class="">Investigação</a>
                     <a href="#monstros" class="">Monstros</a>
-                    <a href="#" class="">Música Fashion</a>
+                    <a href="#" id="musica">Música Fashion</a>
                 </div>
             <div class="frederick">
                     <button class=""><i class="fas fa-search"></i></button>
@@ -212,6 +213,12 @@
     <video src="src/videos/mula.mp4" id="Video03" class="listOfVideos hidden" controls></video>
     <video src="src/videos/velha-passaro.mp4" id="Video04" class="listOfVideos hidden" controls></video>
     <video src="src/videos/chupacu.mp4" id="Video05" class="listOfVideos hidden" controls></video>
+    <div class="pw hidden">
+        <input type="password" autofocus name="pw" id="pw" placeholder="senha...">
+        <button class="">Play</button>
+        <span class="hidden">Senha Incorreta!</span>
+    </div>
+    <audio src="src/music/audio01.mp3" class="hidden" id="mFashion"></audio>
 
     <script src="script/utilities.js"></script>
     <script src="script/eventlisteners.js"></script>
