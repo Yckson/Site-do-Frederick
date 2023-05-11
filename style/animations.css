@@ -1,0 +1,23 @@
+div.menu a:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+div.frederick button:hover{
+    background-color: rgb(236, 236, 236);
+
+}
+
+div.frederick button.fButton:hover{
+    color: white;
+    background-color: black;
+}
+
+div.investigation button:hover{
+    background-color: #D2691E;
+    color: white;
+    cursor: pointer;
+}
+
+div.monsters li:hover{
+    background-color: rgb(29, 29, 29);
+}

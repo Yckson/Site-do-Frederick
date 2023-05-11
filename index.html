@@ -12,10 +12,9 @@
         <nav>
             
             <div class="menu">
-                    <a href="#" class="">Sobre</a>
-                    <a href="#" class="">Investigação</a>
-                    <a href="#" class="">Monstros</a>
-                    <a href="#" class="">Moda</a>
+                    <a href="#sobre" class="">Sobre</a>
+                    <a href="#investigacao" class="">Investigação</a>
+                    <a href="#monstros" class="">Monstros</a>
                     <a href="#" class="">Música Fashion</a>
                 </div>
             <div class="frederick">
@@ -29,7 +28,7 @@
             <span class="">FREDERICK</span>
             <img src="src/frederick-brand.png" class="" alt="" srcset="">         
         </div>
-        <h1 class="cap">SOBRE MIM</h1>
+        <h1 class="cap" id="sobre">SOBRE MIM</h1>
         <div class="about-frederick">
                 <img src="src/frederick-about.png" id="frederick-about-image" class="" alt="" srcset="">
                 <div class="about-desc">
@@ -37,38 +36,63 @@
                 </div>
                 <video src="src/backgroundVideo01.mp4" class="backgroundVideo01" loop muted></video>
         </div>
-        <h1 class="cap">INVESTIGAÇÃO</h1>
+        <h1 class="cap" id="investigacao">INVESTIGAÇÃO</h1>
         <p class="cap-desc">~ Enquanto alguns se preocupam em seguir as tendências da moda, eu prefiro desbravar o mundo paranormal, investigando mistérios que desafiam as leis da natureza. É um estilo único e incomparável, você não acha?</p>
         <div class="investigation">
-            <div class="investigation-video" id="video01">
+            <div class="investigation-video">
                 <div>
-                    <img src="/src/thumb01.png" alt="">
-                    <h2>Título</h2>
-                    <p>~ Enquanto alguns se preocupam em seguir as tendências da moda, eu prefiro desbravar o mundo paranormal, investigando mistérios que desafiam as leis da natureza. É um estilo único e incomparável, você não acha?</p>
+                    <img src="/src/investigation/amigo-fashion.png" alt="">
+                    <h2>Frederick e seu amigo fashion</h2>
+                    <p>Frederick após conversar por vários meses decide ver pessoalmente seu amigo fashion.</p>
                 </div>
                 
-                <button id="playVideo01">Play</button>
+                <button id="playVideo01" class="playButton">Play</button>
             </div>
-            <div class="investigation-video" id="video01">
+            <div class="investigation-video">
                 <div>
-                    <img src="/src/thumb01.png" alt="">
-                    <h2>Título</h2>
-                    <p>~ Enquanto alguns se preocupam em seguir as tendências da moda, eu prefirmistérios que desafiam as leis da natureza. É um estilo único e incomparável, você não acha?</p>
+                    <img src="/src/investigation/curupira.png" alt="">
+                    <h2>A estilosa caminhada invertida</h2>
+                    <p>Em uma deslumbrante viagem ao Parque Nacional de Analvilhandas encontrei o Moonwalker brasileiro e protetor das florestas.</p>
                 </div>
                 
-                <button id="playVideo01">Play</button>
+                <button id="playVideo02" class="playButton">Play</button>
             </div>
-            <div class="investigation-video" id="video01">
+            <div class="investigation-video">
                 <div>
-                    <img src="/src/thumb01.png" alt="">
-                    <h2>Título</h2>
-                    <p>~ Enquanto algunistérios que desafiam as leis da natureza. É um estilo único e incomparável, você não acha?</p>
+                    <img src="/src/investigation/mula.png" alt="">
+                    <h2>Belos e Horrendos tons vibrantes da moda</h2>
+                    <p>No meio de uma jornada, encontrei e tentei converter uma mula.</p>
                 </div>
                 
-                <button id="playVideo01">Play</button>
+                <button id="playVideo03" class="playButton">Play</button>
             </div>
+            <div class="investigation-video">
+                <div>
+                    <img src="/src/investigation/velha-passaro.png" alt="">
+                    <h2>Uma Velha-Pássaro não estilosa</h2>
+                    <p>No meio de uma jornada, encontrei e tentei converter uma mula.</p>
+                </div>
+                
+                <button id="playVideo04" class="playButton">Play</button>
+            </div>
+            <div class="investigation-video">
+                <div>
+                    <img src="/src/investigation/chupacu.png" alt="">
+                    <h2>A morte do estilo</h2>
+                    <p>Prefiro nunca mencionar os desagradáveis fatos ocorridos nesse vídeo, vejam e sintam-se alertados!</p>
+                </div>
+                
+                <button id="playVideo05" class="playButton">Play</button>
+            </div>
+            <div class="background-video-player hidden">
+                <div class="video-player">
+                    <button><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+            
         </div>
-        <h1 class="cap">MONSTROS</h1>
+        <h1 class="cap" id="monstros">MONSTROS</h1>
         <div class="monsters">
             <div class="m-list">
                 <ul>
@@ -85,7 +109,7 @@
             </div>
             <div class="lore-container">
                 <div class="m-lore">
-                    <img src="src/monsters/img01.png" id="saci" alt="" srcset="" >
+                    <img src="src/monsters/img01.jpg" id="saci" alt="" srcset="" >
                     <h2>Saci-Pererê</h2>
                     <p>Meu caro, você já ouviu falar do Saci-pererê? É uma lenda brasileira com origem tupi-guarani, que é representada por um menino negro superestiloso que possui apenas uma perna, mas não se deixe enganar pela aparência, ele é poderoso! Sempre acompanhado de seu inseparável cachimbo, o Saci usa uma carapuça vermelha que lhe dá habilidades mágicas únicas e incomparáveis. 
                     </p>
@@ -177,10 +201,22 @@
                 </div>
             </div>
         </div>
+        
 
     </div>
 
     <script src="https://kit.fontawesome.com/c6444e5d29.js" crossorigin="anonymous"></script>
+
+    <video src="src/videos/amigo-fashion.mp4" id="Video01" class="listOfVideos hidden" controls></video>
+    <video src="src/videos/curupira.mp4" id="Video02" class="listOfVideos hidden" controls></video>
+    <video src="src/videos/mula.mp4" id="Video03" class="listOfVideos hidden" controls></video>
+    <video src="src/videos/velha-passaro.mp4" id="Video04" class="listOfVideos hidden" controls></video>
+    <video src="src/videos/chupacu.mp4" id="Video05" class="listOfVideos hidden" controls></video>
+
+    <script src="script/utilities.js"></script>
+    <script src="script/eventlisteners.js"></script>
+    <script src="script/interactions.js"></script>
+    <script src="script/main.js"></script>
 
 </body>
 </html>

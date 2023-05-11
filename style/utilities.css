@@ -28,8 +28,12 @@
         max-height: 550px !important;
     }
 
+    div.investigation{
+        justify-content: center;
+    }
+
     div.investigation-video{
-        width: calc((100% / 3) - 10px) !important;
+        width: calc(50% - 20px) !important;
     }
 
     div.m-lore img{
@@ -90,14 +94,15 @@
         width: 150% !important;
     }
 
-    div.investigation-video{
-        width: calc((100% / 2) - 10px) !important;
+    div.investigation{
+        width: 100% !important;
+        
     }
 
     div.monsters{
         flex-direction: column !important;
         height: fit-content !important;
-        width: 80% !important;
+        width: 90% !important;
         border-radius: 15px;
     }
 
@@ -140,6 +145,12 @@
         width: max-content !important;
         
     }
+
+    div.video-player{
+        height: calc(360px / 1.5) !important;
+        width: calc(720px / 1.5) !important;
+        padding: 5px !important;
+    }
 }
 
 @media Screen and (max-width: 700px){
@@ -171,9 +182,15 @@
         padding: 2% !important;
     }
 
+    div.investigation-video{
+        width: calc(100% - 20px) !important;
+    }
+
     div.m-lore img{
         width: 150px !important;
     }
+
+
 
 }
 
@@ -220,11 +237,13 @@
         padding: 5px 10px;
     }
 
-    div.investigation-video{
-        width: calc(100% - 5px) !important;
-    }
-
     div.m-lore img{
         width: 100px !important;
+    }
+
+    div.video-player{
+        height: calc(360px / 2) !important;
+        width: calc(720px / 2) !important;
+        padding: 5px !important;
     }
 }
