@@ -25,6 +25,7 @@ function closeInvestigationVideo(ev){
         hide(video);
     }
     document.body.appendChild(document.querySelector('div.pw'));
+    hide(document.querySelector('div.pw'));
     document.querySelector('div.video-player > button').style.color = "white";
     hide(ev);
 }
